@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 import org.jetbrains.kotlin.gradle.tasks.UsesKotlinJavaToolchain
 
 plugins {
@@ -5,6 +7,7 @@ plugins {
     java
     application
     id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("org.jetbrains.dokka") version "1.8.20"
 }
 
 repositories {
