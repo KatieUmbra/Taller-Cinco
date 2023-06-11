@@ -2,12 +2,11 @@ package notas;
 
 public class notas {
     public static void main(String[] args) {
-        VentanaPrincipal miVentanaPrincipal; /* Define la ventana
+        ventanaPrincipal miVentanaPrincipal; /* Define la ventana
         principal */
-        miVentanaPrincipal= new VentanaPrincipal(); /* Crea la ventana
+        miVentanaPrincipal= new ventanaPrincipal(); /* Crea la ventana
         principal */
         miVentanaPrincipal.setVisible(true); /* Establece la ventana
         como visible */
-        }
     }
-} 
+}
