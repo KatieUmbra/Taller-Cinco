@@ -20,7 +20,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
 }
 
-val jdkVersion = 20
+val jdkVersion = 19
 
 val service = project.extensions.getByType<JavaToolchainService>()
 val customLauncher = service.launcherFor {
@@ -32,15 +32,15 @@ project.tasks.withType<UsesKotlinJavaToolchain>().configureEach {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_20
-    targetCompatibility = JavaVersion.VERSION_20
+    sourceCompatibility = JavaVersion.VERSION_19
+    targetCompatibility = JavaVersion.VERSION_19
     toolchain {
         languageVersion.set(JavaLanguageVersion.of(jdkVersion))
     }
 }
 
 kotlin {
-    jvmToolchain(jdkVersion)
+    jvmToolchain(19)
 }
 
 sourceSets.main {
