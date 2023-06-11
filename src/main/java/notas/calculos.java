@@ -1,9 +1,9 @@
 package notas;
 
-public class principal {
+public class calculos {
     double[] listaNotas; /* Atributo que identifica un array de notas de tipo double */
     /*** Constructor de la clase Notas, instancia un array con 5 notas de tipo double */
-    public principal() {
+    public calculos() {
         listaNotas = new double[5]; // Crea un array de 5 notas
     }
  
