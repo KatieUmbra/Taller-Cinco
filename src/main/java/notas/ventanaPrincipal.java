@@ -1,4 +1,5 @@
 package notas;
+
 import javax.swing.JOptionPane;
 
 
@@ -7,6 +8,17 @@ public class ventanaPrincipal extends javax.swing.JFrame {
     public ventanaPrincipal() {
         initComponents();
     }
+    
+    ActionListener {
+        // Un contenedor de elementos gráficos
+        private Container contenedor;
+        // Etiquetas estáticas de cada nota
+        private JLabel nota1, nota2, nota3, nota4, nota5, promedio, desviación, mayor, menor;
+        // Campos de ingreso de cada nota
+        private JTextField campoNota1, campoNota2, campoNota3, campoNota4, campoNota5;
+        // Botones para realizar cálculos y para borrar las notas
+        private JButton calcular, limpiar;
+ 
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -174,6 +186,7 @@ public class ventanaPrincipal extends javax.swing.JFrame {
     */
     @Override
     public void actionPerformed(ActionEvent evento) {
+        // @param evento el objeto ActionEvent que representa la acción del usuario
         if (evento.getSource() == calcular) { /* Si se pulsa el botón*/
             calculos notas = new calculos(); // Se crea un objeto Notas
             
