@@ -1,9 +1,9 @@
 package notas;
 
-public class calculos {
+public class Calculos {
     double[] listaNotas; /* Atributo que identifica un array de notas de tipo double */
     /*** Constructor de la clase Notas, instancia un array con 5 notas de tipo double */
-    public calculos() {
+    public Calculos() {
         listaNotas = new double[5]; // Crea un array de 5 notas
     }
  
@@ -20,7 +20,7 @@ public class calculos {
     * Método que calcula la desviación estándar del array de notas
     * @return La desviación estándar del array de notas
     */
-    double calcularDesviación() {
+    double calcularDesviacion() {
         double prom = calcularPromedio(); /* Invoca el método para
         calcular el promedio */
         double suma = 0;
