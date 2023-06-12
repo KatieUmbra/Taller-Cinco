@@ -1,7 +1,6 @@
-package notas;
+package taller.cinco.notas;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -10,9 +9,9 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ventanaPrincipal extends javax.swing.JFrame implements ActionListener {
+public class VentanaPrincipal extends javax.swing.JFrame implements ActionListener {
 
-    public ventanaPrincipal() {
+    public VentanaPrincipal() {
         initComponents();
     }
 
@@ -70,10 +69,10 @@ public class ventanaPrincipal extends javax.swing.JFrame implements ActionListen
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public static void main(String args[]) {
+    public static void run() {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventanaPrincipal().setVisible(true);
+                new VentanaPrincipal().setVisible(true);
             }
         });
     }
@@ -85,12 +84,12 @@ public class ventanaPrincipal extends javax.swing.JFrame implements ActionListen
     public void actionPerformed(ActionEvent evento) {
         // @param evento el objeto ActionEvent que representa la acción del usuario
         if (evento.getSource() == calcular) { /* Si se pulsa el botón*/
-            calculos notas = new calculos(); // Se crea un objeto Notas
+            Calculos notas = new Calculos(); // Se crea un objeto Notas
 
             if (campoNota1.getText().isEmpty() || campoNota2.getText().isEmpty() ||
                 campoNota3.getText().isEmpty() || campoNota4.getText().isEmpty() ||
                 campoNota5.getText().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Debe ingresar todas las notas.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this, "Debe ingresar todas las Notas.", "Error", JOptionPane.ERROR_MESSAGE);
             return;
             }
 
@@ -118,7 +117,7 @@ public class ventanaPrincipal extends javax.swing.JFrame implements ActionListen
             menor.setText("Valor menor = " + String.valueOf(notas.calcularMenor()));
             }
             /* Se se pulsa el botón Limpiar se dejan en blanco los campos de
-            notas */
+            Notas */
         if (evento.getSource() == limpiar) {
                 campoNota1.setText("");
                 campoNota2.setText("");
@@ -132,22 +131,10 @@ public class ventanaPrincipal extends javax.swing.JFrame implements ActionListen
         }
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton calcular;
-    private javax.swing.JTextField campoNota1;
-    private javax.swing.JTextField campoNota2;
-    private javax.swing.JTextField campoNota3;
-    private javax.swing.JTextField campoNota4;
-    private javax.swing.JTextField campoNota5;
-    private javax.swing.JLabel desviacion;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JButton limpiar;
-    private javax.swing.JLabel mayor;
-    private javax.swing.JLabel menor;
-    private javax.swing.JLabel promedio;
-    private javax.swing.JButton salir;
     // End of variables declaration//GEN-END:variables
 }
