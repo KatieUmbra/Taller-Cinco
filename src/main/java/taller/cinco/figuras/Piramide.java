@@ -1,4 +1,4 @@
 package taller.cinco.figuras;
 
-public class Piramide {
+public class Piramide extends FiguraGeometrica {
 }

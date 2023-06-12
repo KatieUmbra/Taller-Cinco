@@ -15,6 +15,7 @@ repositories {
 }
 
 dependencies {
+    implementation("com.formdev:flatlaf:3.1.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.8.21")
     testImplementation("junit:junit:4.13.2")
