@@ -2,8 +2,8 @@ package taller.cinco;
 
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatLightLaf;
-import kotlin.NotImplementedError;
 import taller.cinco.figuras.Principal;
+import taller.cinco.notas.VentanaPrincipal;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,12 +15,11 @@ public class Main {
             return;
         }
         var mode = args[0].toUpperCase();
+        FlatLightLaf.setup(new FlatDarkLaf());
         if (mode.equals("NOTAS")) {
-
-            throw new NotImplementedError("'Notas' aun no ha sido implementado");
-
+            var ventanaPrincipal = new VentanaPrincipal();
+            ventanaPrincipal.setVisible(true);
         } else if (mode.equals("FIGURAS")) {
-            FlatLightLaf.setup(new FlatDarkLaf());
             var figurasPrincipal = new Principal();
             figurasPrincipal.setVisible(true);
         } else {
