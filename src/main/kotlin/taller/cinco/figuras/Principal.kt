@@ -1,6 +1,8 @@
 package taller.cinco.figuras
 
+import taller.cinco.figuras.ventanas.CilindroVentana
 import taller.cinco.figuras.ventanas.EsferaVentana
+import taller.cinco.figuras.ventanas.PiramideVentana
 import java.awt.Container
 import java.awt.Dimension
 import java.awt.event.ActionEvent
@@ -47,8 +49,8 @@ class Principal : JFrame(), ActionListener {
     override fun actionPerformed(evento: ActionEvent?) {
         when (evento?.source) {
             esfera -> EsferaVentana().isVisible = true
-            cilindro -> {}
-            piramide -> {}
+            cilindro -> CilindroVentana().isVisible = true
+            piramide -> PiramideVentana().isVisible = true
         }
     }
 }
