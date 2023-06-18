@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>taller.cinco.figuras.Cilindro</OriginalElement>
+  <nodes>
+    <node x="685.1031178515327" y="354.73132272006893">taller.cinco.figuras.ventanas.PiramideVentana</node>
+    <node x="-134.46699525012156" y="-16.61982041894069">taller.cinco.figuras.FiguraGeometrica</node>
+    <node x="-215.81296147228443" y="390.1923722057727">taller.cinco.figuras.ventanas.EsferaVentana</node>
+    <node x="192.58429382177002" y="378.6797089670808">taller.cinco.figuras.ventanas.CilindroVentana</node>
+    <node x="591.0354338506145" y="178.18035841441517">taller.cinco.figuras.Piramide</node>
+    <node x="136.63828646062126" y="200.05316990293582">taller.cinco.figuras.Cilindro</node>
+    <node x="-215.90209442954514" y="566.9576543233592">taller.cinco.figuras.Principal</node>
+    <node x="-208.7145370832202" y="160.73424841860145">taller.cinco.figuras.Esfera</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="taller.cinco.figuras.Principal" target="taller.cinco.figuras.ventanas.CilindroVentana" relationship="CREATE">
+      <point x="174.0" y="0.0" />
+      <point x="408.58429382177" y="624.9576543233592" />
+      <point x="0.0" y="84.00000000000006" />
+    </edge>
+    <edge source="taller.cinco.figuras.Principal" target="taller.cinco.figuras.ventanas.EsferaVentana" relationship="CREATE">
+      <point x="0.08913295726071624" y="-58.0" />
+      <point x="0.0" y="58.0" />
+    </edge>
+    <edge source="taller.cinco.figuras.Cilindro" target="taller.cinco.figuras.FiguraGeometrica" relationship="GENERALIZATION">
+      <point x="-2.864606212824583E-4" y="-58.00016990293582" />
+      <point x="332.638" y="131.0" />
+      <point x="-16.467" y="131.0" />
+      <point x="-4.749878442567024E-6" y="57.999820418940686" />
+    </edge>
+    <edge source="taller.cinco.figuras.Esfera" target="taller.cinco.figuras.FiguraGeometrica" relationship="GENERALIZATION">
+      <point x="-4.6291677981002977E-4" y="-84.50024841860144" />
+      <point x="-70.715" y="131.0" />
+      <point x="-16.467" y="131.0" />
+      <point x="-4.749878442567024E-6" y="57.999820418940686" />
+    </edge>
+    <edge source="taller.cinco.figuras.Principal" target="taller.cinco.figuras.ventanas.PiramideVentana" relationship="CREATE">
+      <point x="174.0" y="15.0" />
+      <point x="901.1031178515327" y="639.9576543233592" />
+      <point x="0.0" y="84.0" />
+    </edge>
+    <edge source="taller.cinco.figuras.Esfera" target="taller.cinco.figuras.FiguraGeometrica" relationship="CREATE">
+      <point x="-15.00046291677981" y="-84.5" />
+      <point x="-69.24800474987845" y="58.0" />
+    </edge>
+    <edge source="taller.cinco.figuras.ventanas.EsferaVentana" target="taller.cinco.figuras.Esfera" relationship="CREATE">
+      <point x="-28.901575610935765" y="-58.0" />
+      <point x="0.0" y="84.5" />
+    </edge>
+    <edge source="taller.cinco.figuras.Piramide" target="taller.cinco.figuras.FiguraGeometrica" relationship="GENERALIZATION">
+      <point x="-4.3385061451317597E-4" y="-58.00035841441516" />
+      <point x="819.035" y="131.0" />
+      <point x="-16.467" y="131.0" />
+      <point x="-4.749878442567024E-6" y="57.999820418940686" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6650516986706057" showDependencies="true" x="558.2751165526895" y="491.4395822610075" />
+  <SelectedNodes>
+    <node>taller.cinco.figuras.ventanas.CilindroVentana</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
